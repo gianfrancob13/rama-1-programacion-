@@ -1,0 +1,392 @@
+
+body{
+	overflow-x: hidden;
+	background-color: gray;
+}
+html{
+	font-size: 100%;
+}
+@font-face {
+	font-family: 'tipo';
+	src: url('../assets/fonts/tipo1.ttf');
+}
+@font-face {
+	font-family: 'tipo2';
+	src: url('../assets/fonts/tipo2.ttf');
+}
+.nav--item {
+	font-family:'tipo';
+	color: white;
+	display: inline;}
+.nav--item--color a{
+	color: white;
+}
+.card {
+	font-family: 'tipo';}
+img {
+	width: 100px;
+	height: auto;}
+.cuadrado{
+	background-color: red;}
+.contacto {
+ height: 50px;
+ width: 50px;
+}
+footer a img {
+ height: 70px;
+ width: 70px;
+}
+.card--titulo{
+	color: white;
+	font-family: 'tipo2';
+}
+.footer--encabezado {font-family: 'tipo2';}
+.articulos {
+	font-family:'tipo';
+	color: white;}
+.articulostitulo{
+	font-family:'tipo2';
+	color: black;}
+.articulos5{ 
+font-family:'tipo2';
+	color: black; }
+.foto{
+height: 400px;
+ width: 500px;	
+}
+.titulomain {
+	font-family:'tipo';
+	color: white;
+}
+
+
+
+.div-padre{
+   display: grid;
+   grid-template-areas:
+     "header nav nav1"
+     "tmain1 tmain2 tmain3"
+     "main main main"
+     "footert footert footert"
+     "footer footer footer"
+     "contacto contacto contacto";
+     
+   grid-template-rows: 200px 100px 100px 400px 200px 50px 50px;
+   grid-template-columns: 33% auto 33%;
+   padding: 20px;
+}
+
+main div .fotoo1 { display: flex;
+	justify-content: center; }
+
+header { grid-area: header}
+
+nav {grid-area: nav1;
+display: flex;  flex-direction: row; 
+   justify-content: flex-end;
+}
+
+main {grid-area: main;
+display: flex;
+   height: 400px;
+   flex-direction: column;}
+footer{grid-area: footer;}
+	
+.border{
+	border: 1px solid black;}
+
+.titulomain {
+	display: flex;
+	justify-content: center;
+align-content: end;}
+
+.card--titulo{display: flex;
+	justify-content: center;
+align-content: end;}
+
+
+.footer--encabezado {display: flex;
+	justify-content: center;}
+
+.perfil1{grid-area: main;
+display: flex;
+	justify-content: center;}
+
+a {grid-area: contacto;}
+
+.contacto {
+display: flex;
+	justify-content: center; }
+
+.img3 { display: flex;
+	justify-content: center; }
+
+.tituldiseño { grid-area: tmain2;
+	display: flex;
+	justify-content: center;
+	font-family: 'tipo2'; }
+
+.foto1{
+display: flex;
+	justify-content: center; }
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 1000px){
+	body{
+		background-color: lightgreen;
+	}
+
+.div-padre {
+   display: grid;
+   grid-template-areas:
+     "header"
+     "nav"
+     "navv"
+     "main"
+     "footert"
+     "footer"
+     "contacto";
+     grid-row-gap: 5px; 
+   grid-template-columns: 100%;
+   grid-template-rows: 200px 100px 100px 1000px 100px 200px 200px;
+   padding: 10px;
+}
+
+header { grid-area: header;
+height: 200px;}
+
+nav {grid-area: nav;
+display: flex;  flex-direction: row; 
+   justify-content: center;
+   font-size: small;
+   height: 100px; padding: 5px;
+}
+
+main {grid-area: main;
+display: flex;
+   height: 400px;
+   flex-direction: column;}
+
+.footer{grid-area: footer;
+align-content: end;}
+	
+.border{
+	border: 1px solid black;}
+
+
+.tituldiseño { grid-area:titulo;
+	display: flex;
+	justify-content: center;}
+
+.card--titulo{display: flex;
+	justify-content: center;}
+
+
+.footer--encabezado {display: flex;
+	justify-content: center;}
+
+.perfil1{grid-area: main;
+display: flex;
+	justify-content: center;}
+.img3 { display: flex;
+	justify-content: center; }
+div .logo1 { display: flex;
+	justify-content: center; }
+main div .fotoo1 { display: flex;
+	justify-content: center; }
+}
+
+
+
+
+
+
+
+
+
+.div-padrep{
+   display: grid;
+   grid-template-areas:
+     "header nav nav1"
+     "tmain1 tmain2 tmain3"
+     "main main main"
+     "footert footert footert"
+     "footer footer footer"
+     "contacto contacto contacto";
+     
+   grid-template-rows: 200px 100px 100px 400px 200px 50px 50px;
+   grid-template-columns: 33% auto 33%;
+   padding: 20px;
+}
+
+main div .fotoo1 { display: flex;
+	justify-content: center; }
+
+header { grid-area: header}
+
+nav {grid-area: nav1;
+display: flex;  flex-direction: row; 
+   justify-content: flex-end;
+}
+
+main {grid-area: main;
+display: flex;
+   height: 400px;
+   flex-direction: column;}
+footer{grid-area: footer;}
+	
+.border{
+	border: 1px solid black;}
+
+.titulomain {
+	display: flex;
+	justify-content: center;
+align-content: end;}
+
+.card--titulo{display: flex;
+	justify-content: center;
+align-content: end;}
+
+
+.footer--encabezado {display: flex;
+	justify-content: center;}
+
+.perfil1{grid-area: main;
+display: flex;
+	justify-content: center;}
+
+a {grid-area: contacto;}
+
+.contacto {
+display: flex;
+	justify-content: center; }
+
+.img3 { display: flex;
+	justify-content: center; }
+
+.tituldiseño { grid-area: tmain2;
+	display: flex;
+	justify-content: center;
+	font-family: 'tipo2'; }
+
+.foto1{
+display: flex;
+	justify-content: center; }
+
+.articulostitulo { grid-area: tmain2;
+display: flex;
+	justify-content: center; }
+section{ grid-area: main;
+}
+
+.proyectos{  display: flex;  flex-direction: row;
+justify-content: space-around;
+}
+
+.fotos1 { height: 350px;
+ width: 400px; }
+
+ .fotos2 { height: 250px;
+ width: 400px; }
+
+.fotos3 { height: 300px;
+ width: 400px; }
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 1000px){
+	body{
+		background-color: lightgreen;
+	}
+
+.div-padrep {
+   display: grid;
+   grid-template-areas:
+     "header"
+     "nav"
+     "navv"
+     "main"
+     "footert"
+     "footer"
+     "contacto";
+     grid-row-gap: 5px; 
+   grid-template-columns: 100%;
+   grid-template-rows: 200px 100px 100px 1000px 100px 200px 200px;
+   padding: 10px;
+}
+
+header { grid-area: header;
+height: 200px;}
+
+nav {grid-area: nav;
+display: flex;  flex-direction: row; 
+   justify-content: center;
+   font-size: small;
+   height: 100px; padding: 5px;
+}
+
+main {grid-area: main;
+display: flex;
+   height: 400px;
+   flex-direction: column;}
+
+.footer{grid-area: footer;
+align-content: end;}
+	
+.border{
+	border: 1px solid black;}
+
+
+.tituldiseño { grid-area: navv;
+	display: flex;
+	justify-content: center;}
+
+.card--titulo{display: flex;
+	justify-content: center;}
+
+
+.footer--encabezado {display: flex;
+	justify-content: center;}
+
+.perfil1{grid-area: main;
+display: flex;
+	justify-content: center;}
+.img3 { display: flex;
+	justify-content: center; }
+div .logo1 { display: flex;
+	justify-content: center; }
+main div .fotoo1 { display: flex;
+	justify-content: center; }
+.articulostitulo { grid-area: navv;
+display: flex;
+	justify-content: center; }
+
+.proyectos{  display: flex;  flex-direction: column;
+justify-content: space-around;
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
